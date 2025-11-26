@@ -32,17 +32,17 @@
             background: #575757;
         }
         .slider {
-            width: 100%;
+            width: 50%;
             overflow: hidden;
             position: relative;
         }
         .slides {
             display: flex;
-            width: 300%;
+            width: 150%;
             animation: slide 12s infinite;
         }
         .slides img {
-            width: 100%;
+            width: 50%;
         }
         @keyframes slide {
             0% { margin-left: 0; }
@@ -89,7 +89,7 @@
 
 <section id="inicio" class="slider">
     <div class="slides">
-        <img src="img1.jpg" alt="Imagen 1">
+        <img src="img1.jpg" width="50" height="50" alt="Imagen 1">
         <img src="img2.jpg" alt="Imagen 2">
         <img src="img3.jpg" alt="Imagen 3">
     </div>
@@ -150,6 +150,7 @@
 
 </body>
 </html>
+
 
 
 
