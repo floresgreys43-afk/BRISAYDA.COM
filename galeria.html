@@ -1,49 +1,110 @@
-﻿<¡doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-   <title> Ejercicios: hipervinculos </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesanías en Tejidos y Chompas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f6f6f6;
+        }
+        header {
+            background: #8b3e2f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .slides {
+            display: flex;
+            width: 185%;
+            animation: slide 12s infinite;
+        }
+        .slides img {
+            width: 13%;
+        }
+        @keyframes slide {
+            0% { margin-left: 0; }
+            33% { margin-left: -100%; }
+            66% { margin-left: -200%; }
+            100% { margin-left: 0; }
+        }
+        .contenido {
+            padding: 20px;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .galeria img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
-
 <body>
-    <h1 id="inicio"> Hipervinculos </h1>
 
-    <h2>Hipervinculos internos</h2>
-    <a href="#final">Ir al final</a>
+<header>
+    <h1>Artesanías en Tejidos y Chompas</h1>
+    <p>Hecho a mano con tradición y cultura</p>
+</header>
 
-    <h2>Hipervinculos a otra pagina HTML</h2>
-    <a href="html-link2.html">
-    Enlace a otra pagina HTML 
-    <a/>
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="galeria.html">Galería</a>
+    <a href="videos.html">Videos</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
 
-    <h2>Hipervinculos a un archivo</h2>
-    <a href="texto.rtf">
-    Enlace a un archivo en formato Word
-    </a>
-    <h2>Hipiervinculosa una pagina web</h2>
-    <a href="https://es.wikipedia.org/wiki/HTML">
-    Enlace a Wikipedia.Articulo HTML.
-    </a>
 
-    <p style="margin-top:800px"> Separacion </p>
-   
-    <h2 id="final">Hipervinculos internos</h2>
-    <a href="#inicio">Ir al inicio</a>
 
-<p>Ejemplo de una fotografia con formato
-   JPG:</P>
-<img src="beach-01.jpg" alt="Fotografia de playa">
+<section id="galeria" class="contenido">
+    <h2>Galería de Imágenes</h2>
+    <div class="galeria">
+        <img src="img/g1.jpg" alt="Tejido 1">
+        <img src="img/g2.jpg" alt="Tejido 2">
+        <img src="img/g3.jpg" alt="Tejido 3">
+        <img src="img/g4.jpg" alt="Tejido 4">
+        <img src="img/g5.jpg" alt="Tejido 5">
+        <img src="img/g6.jpg" alt="Tejido 6">
+    </div>
+</section>
 
-<p>
-<!-- Video de Youtube  insertado -->
-<iframe width="853" height="480" src="https://www.youtube.com/embed/ZQ9ijfT9W70" 
-title="¡LAS PERRÍSIMAS VOLTEARON A LAS DIVAS!" frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-allowfullscreen></iframe>
 
-<p>
+<footer>
+    <p>© 2025 Artesanías en Tejidos — Todos los derechos reservados.</p>
+</footer>
 
 </body>
-
 </html>
